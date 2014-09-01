@@ -1,0 +1,11 @@
+{
+    "name"        : "Pod::To::API",
+    "version"     : "*",
+    "author"	  : "github:teodozjan",
+    "description" : "Implemented simple Serialization form http://doc.perl6.org",
+    "depends"     : [ ],
+    "provides"    : {
+	        "Pod::To:API" : "lib/Pod/To/API.pm6"
+	 },
+    "source-url"  : "git://github.com/teodozjan/p6-doc-gen.git"
+}
