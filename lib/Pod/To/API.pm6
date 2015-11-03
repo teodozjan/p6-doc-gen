@@ -1,6 +1,6 @@
 use v6;
 
-class Pod::To::API;
+unit class Pod::To::API;
 
 method render($pod) {
     traverse($pod[0].WHEREFORE);
