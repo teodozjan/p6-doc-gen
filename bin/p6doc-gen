@@ -1,0 +1,12 @@
+use v6;
+
+use File::Find;
+
+sub MAIN(Str $path){
+ my @perl-files = find(dir => $path, name => /.p [l||m] 6?$/).flat;
+ for @perl-files -> $file {
+     my $command = "perl6 --doc=HTML {$file.abspath} > {$file.basename}.html";
+     say $command;shell $command;
+ }
+ 
+}
